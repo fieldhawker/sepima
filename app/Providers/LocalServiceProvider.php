@@ -13,7 +13,7 @@ class LocalServiceProvider extends ServiceProvider
      * @var array
      */
     protected $providers = [
-      \Barryvdh\Debugbar\ServiceProvider::class,
+//      \Barryvdh\Debugbar\ServiceProvider::class,
     ];
 
     /**
@@ -22,7 +22,7 @@ class LocalServiceProvider extends ServiceProvider
      * @var array
      */
     protected $aliases = [
-      'Debugbar' => \Barryvdh\Debugbar\Facade::class,
+//      'Debugbar' => \Barryvdh\Debugbar\Facade::class,
     ];
 
     /**
