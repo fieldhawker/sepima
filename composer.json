@@ -64,7 +64,3 @@
         "vendor/pear/http_oauth"
     ]
 }
-
-//"require-dev": {
-//        "barryvdh/laravel-debugbar": "2.*",
-//}
