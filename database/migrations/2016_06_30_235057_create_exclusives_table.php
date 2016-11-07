@@ -17,10 +17,10 @@ class CreateExclusivesTable extends Migration
             $table->integer('screen_number');
             $table->integer('target_id');
             $table->integer('operator');
-            $table->timestamp('expired_at');
+            $table->timestamp('expired_at')->default('0000-00-00 00:00:00');
             $table->text('comment');
             $table->timestamp('created_at')->default('0000-00-00 00:00:00');
-            $table->timestamp('updated_at')->default(DB::raw('CURRENT_TIMESTAMP on update CURRENT_TIMESTAMP'));
+            $table->timestamp('updated_at')->default(DB::raw('0000-00-00 00:00:00 on update CURRENT_TIMESTAMP'));
         });
     }
 
