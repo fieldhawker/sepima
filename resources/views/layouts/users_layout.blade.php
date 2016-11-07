@@ -28,10 +28,10 @@ Licence URI: http://www.os-templates.com/template-terms
                 <li><a class="drop" href="#">Pages</a>
                     <ul>
                         <li><a href="{{ url('/users/register') }}">会員登録</a></li>
-                        <li><a href={{asset("colossus/pages/full-width.html")}}>Full Width</a></li>
-                        <li><a href={{asset("colossus/pages/sidebar-left.html")}}>Sidebar Left</a></li>
-                        <li><a href={{asset("colossus/pages/sidebar-right.html")}}>Sidebar Right</a></li>
-                        <li><a href={{asset("colossus/pages/basic-grid.html")}}>Basic Grid</a></li>
+                        <li><a href={{secure_asset("colossus/pages/full-width.html")}}>Full Width</a></li>
+                        <li><a href={{secure_asset("colossus/pages/sidebar-left.html")}}>Sidebar Left</a></li>
+                        <li><a href={{secure_asset("colossus/pages/sidebar-right.html")}}>Sidebar Right</a></li>
+                        <li><a href={{secure_asset("colossus/pages/basic-grid.html")}}>Basic Grid</a></li>
                     </ul>
                 </li>
                 <li><a href="{{ url('/admin') }}">管理画面</a></li>
@@ -136,9 +136,9 @@ Licence URI: http://www.os-templates.com/template-terms
 <!-- ################################################################################################ -->
 <a id="backtotop" href="#top"><i class="fa fa-chevron-up"></i></a>
 <!-- JAVASCRIPTS -->
-<script src={{asset("colossus/layout/scripts/jquery.min.js")}}></script>
-<script src={{asset("colossus/layout/scripts/jquery.backtotop.js")}}></script>
-<script src={{asset("colossus/layout/scripts/jquery.mobilemenu.js")}}></script>
-<script src={{asset("colossus/layout/scripts/jquery.flexslider-min.js")}}></script>
+<script src={{secure_asset("colossus/layout/scripts/jquery.min.js")}}></script>
+<script src={{secure_asset("colossus/layout/scripts/jquery.backtotop.js")}}></script>
+<script src={{secure_asset("colossus/layout/scripts/jquery.mobilemenu.js")}}></script>
+<script src={{secure_asset("colossus/layout/scripts/jquery.flexslider-min.js")}}></script>
 </body>
 </html>
