@@ -20,8 +20,8 @@ class CreateItemsTable extends Migration
             $table->text('caption');
             $table->integer('status');
             $table->integer('items_status');
-            $table->timestamp('started_at');
-            $table->timestamp('ended_at');
+            $table->timestamp('started_at')->default('0000-00-00 00:00:00');
+            $table->timestamp('ended_at')->default('0000-00-00 00:00:00');
             $table->integer('delivery_charge');
             $table->integer('delivery_plan');
             $table->integer('pref');
