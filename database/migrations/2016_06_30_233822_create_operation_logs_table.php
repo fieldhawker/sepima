@@ -18,8 +18,8 @@ class CreateOperationLogsTable extends Migration
             $table->integer('target_id');
             $table->integer('operator');
             $table->text('comment');
-            $table->timestamp('executed_at')->default(DB::raw('CURRENT_TIMESTAMP'));
-            $table->timestamp('created_at')->default(DB::raw('CURRENT_TIMESTAMP'));
+            $table->timestamp('executed_at')->default('0000-00-00 00:00:00');
+            $table->timestamp('created_at')->default('0000-00-00 00:00:00');
             $table->timestamp('updated_at')->default(DB::raw('CURRENT_TIMESTAMP on update CURRENT_TIMESTAMP'));
         });
     }
